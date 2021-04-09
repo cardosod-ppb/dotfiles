@@ -1,0 +1,5 @@
+[user]
+	name = Diogo Cardoso
+	email = diogo.cardoso@outlook.com
+[core]
+	excludesfile = /Users/dpcardoso/.gitignore_global

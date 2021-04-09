@@ -1,0 +1,89 @@
+# ~/.macos https://github.com/kentcdodds/dotfiles/blob/main/.macos
+# Modified by Diogo Cardoso 
+# Run without downloading:
+# curl https://raw.githubusercontent.com/dpcardoso/dotfiles/HEAD/.macos | bash
+
+echo "Hello $(whoami)! Let's get you set up."
+
+echo "mkdir -p ${HOME}/Projects"
+mkdir -p "${HOME}/Projects"
+
+echo "installing homebrew"
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+
+echo "installing terminal stuff"
+brew install \
+bat \
+git-delta \
+fastlane \
+fzf \
+git \
+imagemagick \
+n \
+ncdu \
+neovim \
+ripgrep \
+switchaudio-osx \
+tmux \
+tree \
+watchman \
+yarn --without-node
+
+echo "installing apps"
+brew install --cask \
+android-file-transfer \
+android-studio \
+alfred \
+caffeine \
+docker \
+firefox \
+google-chrome \
+iterm2 \
+java8 \
+qlcolorcode \
+qlmarkdown \
+qlstephen \
+quicklook-json \
+react-native-debugger \
+rectangle \
+spotify \
+suspicious-package \
+visual-studio-code \
+vlc
+
+echo "installing fzf"
+$(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
+
+echo "installing node"
+n 10.22.1
+
+echo "installing global npm packages"
+yarn global add \
+git-open \
+pure-prompt \
+serve \
+fkill-cli \
+react-native-cli@2.0.1
+
+echo "installing ruby"
+curl -sSL https://get.rvm.io | bash -s stable
+rvm install 2.6.3
+
+echo "installing global ruby packages"
+gem install \
+cocoapods
+
+echo "cloning dotfiles"
+git clone git@github.com:dpcardoso/dotfiles.git "${HOME}/dotfiles"
+ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
+ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+ln -s "${HOME}/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -s "${HOME}/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
+
+printf "TODO:\n\
+install: \n\
+  Pasta (https://itunes.apple.com/app/id1438389787) \n\
+  Vimac (https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle) \n\
+\n\
+"

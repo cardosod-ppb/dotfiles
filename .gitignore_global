@@ -1,0 +1,15 @@
+
+# mac
+.DS_Store
+
+# vscode
+.vscode/
+
+# npm
+npm-debug.log
+
+# yarn
+yarn-error.log
+
+# eslint
+.eslintcache
