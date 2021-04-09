@@ -26,7 +26,6 @@ fzf \
 git \
 imagemagick \
 java8 \
-n \
 ncdu \
 neovim \
 ripgrep \
@@ -60,7 +59,8 @@ echo "installing fzf"
 $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
 
 echo "installing node"
-n 10.22.1
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash # installation via homebrew isn't officially supported
+nvm install 10.22.1
 
 echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
