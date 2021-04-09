@@ -33,8 +33,7 @@ ripgrep \
 switchaudio-osx \
 tmux \
 tree \
-watchman \
-yarn --without-node
+watchman
 
 echo "installing apps"
 brew install --cask \
@@ -62,6 +61,9 @@ $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
 
 echo "installing node"
 n 10.22.1
+
+echo "installing yarn"
+curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
 
 echo "installing global npm packages"
 yarn global add \
