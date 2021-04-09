@@ -82,7 +82,7 @@ gem install \
 cocoapods
 
 echo "cloning dotfiles"
-git clone git@github.com:dpcardoso/dotfiles.git "${HOME}/dotfiles"
+git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/dotfiles"
 ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
 ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
