@@ -19,6 +19,7 @@ fastlane \
 fzf \
 git \
 imagemagick \
+java8 \
 n \
 ncdu \
 neovim \
@@ -39,7 +40,6 @@ docker \
 firefox \
 google-chrome \
 iterm2 \
-java8 \
 qlcolorcode \
 qlmarkdown \
 qlstephen \
