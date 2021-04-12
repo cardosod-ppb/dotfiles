@@ -32,7 +32,8 @@ ripgrep \
 switchaudio-osx \
 tmux \
 tree \
-watchman
+watchman \
+zsh
 
 echo "installing apps"
 brew install --cask \
@@ -54,6 +55,9 @@ spotify \
 suspicious-package \
 visual-studio-code \
 vlc
+
+echo "setting zsh as default shell"
+chsh -s /usr/local/bin/zsh
 
 echo "installing fzf"
 $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
