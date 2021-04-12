@@ -20,6 +20,7 @@ echo "installing homebrew"
 echo "installing terminal stuff"
 brew install \
 bat \
+coreutils \
 git-delta \
 fastlane \
 fzf \
