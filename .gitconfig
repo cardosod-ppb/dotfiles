@@ -1,5 +1,8 @@
-[user]
-	name = Diogo Cardoso
-	email = diogo.cardoso@outlook.com
+[includeIf "gitdir:~/Projects/personal/"]
+	path = ~/.gitconfig_personal
+
+[includeIf "gitdir:~/Projects/work/"]
+	path = ~/.gitconfig_work
+
 [core]
 	excludesfile = /Users/dpcardoso/.gitignore_global

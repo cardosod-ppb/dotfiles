@@ -86,12 +86,13 @@ gem install \
 cocoapods
 
 echo "cloning dotfiles"
-git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/dotfiles"
-ln -s "${HOME}/dotfiles/.zshrc" "${HOME}/.zshrc"
-ln -s "${HOME}/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
-ln -s "${HOME}/dotfiles/.gitconfig" "${HOME}/.gitconfig"
-ln -s "${HOME}/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
-ln -s "${HOME}/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
+git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/Projects/personal/dotfiles"
+ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -s "${HOME}/Projects/personal/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
+ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
+ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
 
 printf "TODO:\n\
 install: \n\
