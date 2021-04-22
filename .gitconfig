@@ -6,3 +6,11 @@
 
 [core]
   excludesfile = /Users/dpcardoso/.gitignore_global
+  pager = delta
+
+[interactive]
+  diffFilter = delta --color-only
+
+[delta]
+  tabs = 2
+  side-by-side = true
