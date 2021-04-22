@@ -1,8 +1,8 @@
 [includeIf "gitdir:~/Projects/personal/"]
-	path = ~/.gitconfig_personal
+  path = ~/.gitconfig_personal
 
 [includeIf "gitdir:~/Projects/work/"]
-	path = ~/.gitconfig_work
+  path = ~/.gitconfig_work
 
 [core]
-	excludesfile = /Users/dpcardoso/.gitignore_global
+  excludesfile = /Users/dpcardoso/.gitignore_global
