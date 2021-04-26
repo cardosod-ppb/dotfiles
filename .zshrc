@@ -30,6 +30,9 @@ kill_port() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
 # zsh
 autoload -U promptinit; promptinit; prompt pure # load theme
 
+# fzf
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings
+
 # environment variables
 export EDITOR='nvim'
 export LANG=en_US.UTF-8
