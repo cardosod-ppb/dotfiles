@@ -8,6 +8,9 @@
   excludesfile = /Users/dpcardoso/.gitignore_global
   pager = delta
 
+[pull]
+  rebase = true
+
 [interactive]
   diffFilter = delta --color-only
 
