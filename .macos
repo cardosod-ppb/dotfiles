@@ -28,6 +28,7 @@ git \
 imagemagick \
 ncdu \
 neovim \
+parallel \
 ripgrep \
 switchaudio-osx \
 tmux \
@@ -62,6 +63,9 @@ chsh -s /usr/local/bin/zsh
 
 echo "installing fzf"
 $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
+
+echo "installing parallel"
+yes 'will cite' | parallel --citation
 
 echo "installing node"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash # installation via homebrew isn't officially supported
