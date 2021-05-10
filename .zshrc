@@ -1,5 +1,4 @@
 # shortcuts
-alias f="rg"
 alias g="git"
 alias v="nvim"
 
