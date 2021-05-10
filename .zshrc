@@ -49,3 +49,5 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="$PATH:$ANDROID_HOME/emulator"
 export PATH="$PATH:$ANDROID_HOME/tools"
 export PATH="$PATH:$ANDROID_HOME/platform-tools"
+
+path() { echo $PATH | tr ':' '\n' }
