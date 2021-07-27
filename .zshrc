@@ -17,7 +17,7 @@ alias rm='rm -i -v'
 cp_progress() { rsync -WavP --human-readable --progress $1 $2 } # copy with progress 
 
 # directories
-alias ls="gls --almost-all --classify --color --group-directories-first --human-readable -l"
+alias lsa="gls --almost-all --classify --color --group-directories-first --human-readable -l"
 alias lsd='ls -l | grep "^d"' # only directories
 rm_recursive() { find . -name $1 -type d -prune -exec echo '{}' \; -exec rm -rf {} \;  }
 
