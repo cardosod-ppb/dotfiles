@@ -104,6 +104,7 @@ ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
 ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
 ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
+ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
 
 printf "TODO:\n\
 install: \n\

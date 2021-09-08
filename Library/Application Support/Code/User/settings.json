@@ -1,0 +1,17 @@
+{
+  "diffEditor.originalEditable": true,
+  "editor.cursorBlinking": "solid",
+  "editor.fontSize": 16,
+  "editor.formatOnSave": true,
+  "editor.lineNumbers": "on",
+  "editor.tabSize": 2,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "security.workspace.trust.untrustedFiles": "open",
+  "terminal.integrated.fontFamily": "Droid Sans Mono",
+  "terminal.integrated.fontSize": 16,
+  "vim.useSystemClipboard": true,
+  "workbench.colorTheme": "Default Dark+",
+  "workbench.editor.untitled.hint": "hidden",
+}
