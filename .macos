@@ -67,7 +67,7 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 
 echo "installing node"
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash # installation via homebrew isn't officially supported
-nvm install 10.22.1
+nvm install node # "node" is an alias for the latest version 
 
 echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
