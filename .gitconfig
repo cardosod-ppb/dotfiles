@@ -4,6 +4,9 @@
 [includeIf "gitdir:~/Projects/work/"]
   path = ~/.gitconfig_work
 
+[user]
+  name = Diogo Cardoso
+
 [core]
   excludesfile = /Users/dpcardoso/.gitignore_global
   pager = delta

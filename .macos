@@ -11,8 +11,8 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "Hello $(whoami)! Let's get you set up."
 
-echo "mkdir -p ${HOME}/Projects"
-mkdir -p "${HOME}/Projects"
+echo "create projects folder"
+mkdir -p ${HOME}/Projects/{personal,work}
 
 echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -102,11 +102,14 @@ ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
+ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_work" "${HOME}/.gitconfig_work"
 ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
 ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
 ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
 
 printf "TODO:\n\
+configure: \n\
+  Git (work email) \n\
 install: \n\
   Pasta (https://itunes.apple.com/app/id1438389787) \n\
   Vimac (https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle) \n\
