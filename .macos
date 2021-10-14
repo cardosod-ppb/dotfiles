@@ -73,7 +73,7 @@ echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
 
 echo "installing global npm packages"
-yarn global add \
+npm install --global \
 git-open \
 pure-prompt \
 serve \
