@@ -40,7 +40,6 @@ echo "installing apps"
 brew install --cask \
 android-file-transfer \
 alfred \
-caffeine \
 docker \
 gimp \
 google-chrome \
