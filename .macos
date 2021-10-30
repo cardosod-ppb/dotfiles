@@ -43,6 +43,7 @@ docker \
 gimp \
 google-chrome \
 iterm2 \
+pure \
 qlcolorcode \
 qlmarkdown \
 qlstephen \
@@ -75,7 +76,6 @@ curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew do
 echo "installing global npm packages"
 npm install --global \
 git-open \
-pure-prompt \
 serve \
 fkill-cli
 
