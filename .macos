@@ -73,12 +73,6 @@ nvm install node # "node" is an alias for the latest version
 echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
 
-echo "installing global npm packages"
-npm install --global \
-git-open \
-serve \
-fkill-cli
-
 echo "cloning dotfiles"
 git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/Projects/personal/dotfiles"
 ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
@@ -87,6 +81,7 @@ ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_work" "${HOME}/.gitconfig_work"
 ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -s "${HOME}/Projects/personal/dotfiles/.nvm/default-packages" "${HOME}/.nvm/default-packages"
 ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
 ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
 
