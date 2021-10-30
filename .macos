@@ -92,6 +92,8 @@ ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconf
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_work" "${HOME}/.gitconfig_work"
 ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
 ln -s "${HOME}/Projects/personal/dotfiles/.nvm/default-packages" "${HOME}/.nvm/default-packages"
+ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/default" "${HOME}/.npmrcs/default"
+ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/work" "${HOME}/.npmrcs/work"
 ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
 ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
 
@@ -99,6 +101,7 @@ printf "TODO:\n\
 configure: \n\
   GitHub SSH Key (pbcopy < ~/.ssh/github_id_ed25519.pub) \n\
   Git (work email) \n\
+  NPM (work npmrc) \n\
 install: \n\
   Pasta (https://itunes.apple.com/app/id1438389787) \n\
   Vimac (https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle) \n\
