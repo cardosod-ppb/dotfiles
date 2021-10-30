@@ -28,6 +28,7 @@ kill_port() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
 
 # zsh
 autoload -U promptinit; promptinit; prompt pure # load theme
+bindkey -v # vim mode
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings
