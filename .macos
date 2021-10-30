@@ -43,15 +43,18 @@ docker \
 gimp \
 google-chrome \
 iterm2 \
+notion \
 pure \
 qlcolorcode \
 qlmarkdown \
 qlstephen \
 quicklook-json \
 rectangle \
+slack \
 spotify \
 visual-studio-code \
-vlc
+vlc \
+zoom
 
 echo "setting zsh as default shell"
 chsh -s /usr/local/bin/zsh
