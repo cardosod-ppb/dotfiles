@@ -56,6 +56,13 @@ visual-studio-code \
 vlc \
 zoom
 
+echo "installing vscode extensions"
+code --install-extension \
+dbaeumer.vscode-eslint \
+eamodio.gitlens \
+esbenp.prettier-vscode \
+vscodevim.vim
+
 echo "setting zsh as default shell"
 chsh -s /usr/local/bin/zsh
 
