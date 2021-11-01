@@ -27,8 +27,17 @@ alias ports="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 kill_port() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
 
 # zsh
-autoload -U promptinit; promptinit; prompt pure # load theme
 bindkey -v # vim mode
+autoload -U promptinit; promptinit # pure prompt 
+
+# oh my zsh
+export ZSH="$HOME/.oh-my-zsh"
+ZSH_THEME=""
+plugins=(
+  git
+)
+source $ZSH/oh-my-zsh.sh
+prompt pure # pure must be activated after oh my zsh
 
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings

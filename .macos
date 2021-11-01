@@ -66,6 +66,9 @@ vscodevim.vim
 echo "setting zsh as default shell"
 chsh -s /usr/local/bin/zsh
 
+echo "installing oh my zsh"
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 echo "installing fzf"
 $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
 
