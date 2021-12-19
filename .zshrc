@@ -78,5 +78,6 @@ add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
+export PATH="Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 path() { echo $PATH | tr ':' '\n' }
