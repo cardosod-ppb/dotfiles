@@ -44,6 +44,9 @@ prompt pure # pure must be activated after oh my zsh
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings
 
+# thefuck
+eval $(thefuck --alias fck)
+
 # environment variables
 export EDITOR='nvim'
 export LANG=en_US.UTF-8
