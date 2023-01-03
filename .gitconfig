@@ -5,10 +5,10 @@
   path = ~/.gitconfig_work
 
 [user]
-  name = Diogo Cardoso
+	name = Diogo Cardoso
 
 [core]
-  excludesfile = /Users/dpcardoso/.gitignore_global
+  excludesfile = ~/.gitignore_global
   pager = delta
 
 [pull]
