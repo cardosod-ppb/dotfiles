@@ -4,6 +4,7 @@
 
 # vscode
 .vscode/
+.history/
 
 # npm
 npm-debug.log
@@ -13,3 +14,4 @@ yarn-error.log
 
 # eslint
 .eslintcache
+
