@@ -14,5 +14,6 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
   "window.retoreFullscreen": true,
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "preferences.importModuleSpecifier": "relative"
 }
