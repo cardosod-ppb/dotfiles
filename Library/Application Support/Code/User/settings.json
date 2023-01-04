@@ -5,6 +5,15 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
+  "files.exclude": {
+    "**/.git": true,
+    "**/.history": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true
+  },
   "javascript.preferences.importModuleSpecifier": "relative",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "Droid Sans Mono",
