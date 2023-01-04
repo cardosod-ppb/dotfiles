@@ -1,7 +1,7 @@
 {
   "diffEditor.originalEditable": true,
   "editor.cursorBlinking": "solid",
-  "editor.fontSize": 16,
+  "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
@@ -14,4 +14,5 @@
   "vim.useSystemClipboard": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.untitled.hint": "hidden",
+  "window.zoomLevel": 1
 }
