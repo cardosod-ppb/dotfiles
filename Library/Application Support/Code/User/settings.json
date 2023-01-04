@@ -1,19 +1,19 @@
 {
-  "diffEditor.originalEditable": true,
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
-  "preferences.importModuleSpecifier": "relative",
+  "javascript.preferences.importModuleSpecifier": "relative",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "Droid Sans Mono",
   "terminal.integrated.fontSize": 16,
+  "typescript.preferences.importModuleSpecifier": "relative",
   "vim.useSystemClipboard": true,
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
-  "window.retoreFullscreen": true,
+  "window.restoreFullscreen": true,
   "window.zoomLevel": 1
 }
