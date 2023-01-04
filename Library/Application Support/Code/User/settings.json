@@ -6,6 +6,7 @@
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
+  "preferences.importModuleSpecifier": "relative",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "Droid Sans Mono",
   "terminal.integrated.fontSize": 16,
@@ -14,6 +15,5 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
   "window.retoreFullscreen": true,
-  "window.zoomLevel": 1,
-  "preferences.importModuleSpecifier": "relative"
+  "window.zoomLevel": 1
 }
