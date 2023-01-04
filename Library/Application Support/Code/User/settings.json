@@ -1,13 +1,11 @@
 {
   "diffEditor.originalEditable": true,
   "editor.cursorBlinking": "solid",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "Droid Sans Mono",
   "terminal.integrated.fontSize": 16,
@@ -16,8 +14,5 @@
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
   "window.retoreFullscreen": true,
-  "window.zoomLevel": 1,
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+  "window.zoomLevel": 1
 }
