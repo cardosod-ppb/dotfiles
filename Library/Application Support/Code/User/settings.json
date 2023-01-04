@@ -15,5 +15,8 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
-  "window.zoomLevel": 1
+  "window.zoomLevel": 1,
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
 }
