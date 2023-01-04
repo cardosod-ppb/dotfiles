@@ -1,10 +1,11 @@
 {
   "editor.cursorBlinking": "solid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "on",
   "editor.tabSize": 2,
+  "eslint.format.enable": true,
   "files.exclude": {
     "**/.git": true,
     "**/.history": true,
