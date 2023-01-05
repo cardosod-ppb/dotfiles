@@ -3,7 +3,7 @@
   "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
-  "editor.lineNumbers": "on",
+  "editor.lineNumbers": "relative",
   "editor.tabSize": 2,
   "eslint.format.enable": true,
   "files.exclude": {
