@@ -24,6 +24,7 @@
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.untitled.hint": "hidden",
   "workbench.sideBar.location": "right",
+  "window.nativeTabs": true,
   "window.restoreFullscreen": true,
   "window.zoomLevel": 1
 }
