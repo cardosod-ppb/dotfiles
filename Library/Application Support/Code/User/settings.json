@@ -4,6 +4,7 @@
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
   "editor.lineNumbers": "relative",
+  "editor.minimap.enabled": false,
   "editor.tabSize": 2,
   "eslint.format.enable": true,
   "files.exclude": {
