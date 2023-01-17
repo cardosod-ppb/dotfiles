@@ -61,6 +61,7 @@ zoom
 
 echo "installing vscode extensions"
 code --install-extension \
+bierner.markdown-mermaid \
 dbaeumer.vscode-eslint \
 eamodio.gitlens \
 esbenp.prettier-vscode \
