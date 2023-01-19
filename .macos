@@ -42,6 +42,7 @@ android-file-transfer \
 alfred \
 docker \
 firefox \
+flycut \
 gimp \
 google-chrome \
 iterm2 \
@@ -121,7 +122,6 @@ configure: \n\
   Git (work email) \n\
   NPM (work npmrc) \n\
 install: \n\
-  Pasta (https://itunes.apple.com/app/id1438389787) \n\
   Vimac (https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle) \n\
 \n\
 "
