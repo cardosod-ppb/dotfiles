@@ -64,6 +64,7 @@ echo "installing vscode extensions"
 code --install-extension \
 bierner.markdown-mermaid \
 dbaeumer.vscode-eslint \
+editorconfig.editorc \
 eamodio.gitlens \
 esbenp.prettier-vscode \
 vscodevim.vim
