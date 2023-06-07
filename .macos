@@ -28,7 +28,9 @@ imagemagick \
 ncdu \
 neovim \
 parallel \
+rbenv \
 ripgrep \
+ruby-build \
 switchaudio-osx \
 thefuck \
 tmux \
