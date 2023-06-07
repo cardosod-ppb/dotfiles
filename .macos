@@ -28,6 +28,7 @@ imagemagick \
 ncdu \
 neovim \
 parallel \
+pyenv \
 rbenv \
 ripgrep \
 ruby-build \

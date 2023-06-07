@@ -83,6 +83,9 @@ load-nvmrc
 # rbenv
 eval "$(rbenv init - zsh)"
 
+# pyenv
+eval "$(pyenv init -)"
+
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.docker/bin:$PATH"
 export PATH="Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
