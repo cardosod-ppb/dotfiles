@@ -26,6 +26,9 @@ alias ip="ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print \$2}'"
 alias ports="netstat -anvp tcp | awk 'NR<3 || /LISTEN/'"
 kill_port() { lsof -i tcp:"$*" | awk 'NR!=1 {print $2}' | xargs kill -9 ;}
 
+# rpm
+alias extract_rpm='rpm2cpio "$(fzf)" | cpio -idmv'
+
 # zsh
 bindkey -v # vim mode
 autoload -U promptinit; promptinit # pure prompt 
