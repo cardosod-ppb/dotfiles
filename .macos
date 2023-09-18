@@ -19,6 +19,7 @@ echo "installing homebrew"
 
 echo "installing terminal stuff"
 brew install \
+7-zip \
 bat \
 coreutils \
 git-delta \
