@@ -101,11 +101,12 @@ echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
 
 echo "generating a new ssh key for github"
-ssh-keygen -t ed25519 -C "diogo.cardoso@outlook.com" -N "" -f ~/.ssh/github_id_ed25519
+mkdir -p ${HOME}/.ssh/{personal,work}
+ssh-keygen -t ed25519 -C "diogo.cardoso@outlook.com" -N "" -f ~/.ssh/personal/github_id_ed25519
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config
-echo "Host *\n AddKeysToAgent yes\n UseKeychain yes\n IdentityFile ~/.ssh/github_id_ed25519" | tee ~/.ssh/config
-ssh-add -K ~/.ssh/github_id_ed25519
+echo "Host *\n AddKeysToAgent yes\n IdentityFile ~/.ssh/personal/github_id_ed25519" | tee ~/.ssh/config
+ssh-add --apple-use-keychain ~/.ssh/personal/github_id_ed25519
 
 echo "cloning dotfiles"
 git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/Projects/personal/dotfiles"
@@ -123,7 +124,7 @@ ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User
 
 printf "TODO:\n\
 configure: \n\
-  GitHub SSH Key (pbcopy < ~/.ssh/github_id_ed25519.pub) \n\
+  GitHub SSH Key (pbcopy < ~/.ssh/personal/github_id_ed25519.pub) \n\
   Git (work email) \n\
   NPM (work npmrc) \n\
 install: \n\
