@@ -23,6 +23,7 @@ brew install \
 bat \
 coreutils \
 git-delta \
+fnm \
 fzf \
 gh \
 git \
@@ -94,10 +95,6 @@ echo "installing tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 
-echo "installing node"
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash # installation via homebrew isn't officially supported
-nvm install node # "node" is an alias for the latest version 
-
 echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
 
@@ -120,7 +117,6 @@ ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_work" "${HOME}/.gitconfig_work"
 ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
-ln -s "${HOME}/Projects/personal/dotfiles/.nvm/default-packages" "${HOME}/.nvm/default-packages"
 ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/default" "${HOME}/.npmrcs/default"
 ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/work" "${HOME}/.npmrcs/work"
 ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
