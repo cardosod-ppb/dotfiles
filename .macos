@@ -46,6 +46,7 @@ echo "installing apps"
 brew install --cask \
 android-file-transfer \
 alfred \
+balenaetcher \
 docker \
 firefox \
 gimp \
