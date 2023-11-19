@@ -47,6 +47,7 @@ brew install --cask \
 android-file-transfer \
 alfred \
 balenaetcher \
+cyberduck \
 docker \
 firefox \
 gimp \
