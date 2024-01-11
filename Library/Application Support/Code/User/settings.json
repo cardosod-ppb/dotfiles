@@ -2,6 +2,7 @@
   "[handlebars]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "debug.inlineValues": "off",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
   "editor.cursorBlinking": "solid",
@@ -26,18 +27,21 @@
   "git.path": "/usr/bin/git",
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
+  "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
   "terminal.integrated.fontFamily": "Menlo",
   "terminal.integrated.fontSize": 12,
+  "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.updateImportsOnFileMove.enabled": "always",
+  "vim.foldfix": true,
   "vim.useSystemClipboard": true,
   "window.nativeTabs": true,
   "window.restoreFullscreen": true,
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Dark+",
-  "workbench.editor.untitled.hint": "hidden",
-  "workbench.sideBar.location": "right"
+  "workbench.sideBar.location": "right",
+  "workbench.editor.empty.hint": "hidden"
 }
