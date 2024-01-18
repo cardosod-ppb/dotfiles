@@ -1,3 +1,9 @@
+# general
+current_folder=$(dirname "$(realpath "$0")")
+
+# private stuff
+source $current_folder/private/tokens.sh
+
 # shortcuts
 alias g="git"
 alias v="nvim"
