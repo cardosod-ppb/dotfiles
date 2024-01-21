@@ -5,6 +5,7 @@
   "debug.inlineValues": "off",
   "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
+  "editor.autoClosingQuotes": "never",
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Menlo",
