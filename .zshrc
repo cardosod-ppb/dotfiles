@@ -66,7 +66,6 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.docker/bin:$PATH"
 export PATH="Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 

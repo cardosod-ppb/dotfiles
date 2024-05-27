@@ -101,7 +101,7 @@ asdf plugin add nodejs python ruby
 echo "legacy_version_file = yes" >> $HOME/.asdfrc # support .nvmrc
 
 echo "installing yarn"
-curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
+corepack enable
 
 echo "generating a new ssh key for github"
 mkdir -p ${HOME}/.ssh/{personal,work}
