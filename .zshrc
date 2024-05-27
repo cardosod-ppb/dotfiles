@@ -1,8 +1,5 @@
-# general
-#current_folder=$(dirname "$(realpath "$0")") # FIXME: throws an error on bootstrap
-
 # private stuff
-# source $current_folder/private/tokens.sh
+source ~/Projects/personal/tokens.sh
 
 # shortcuts
 alias g="git"
