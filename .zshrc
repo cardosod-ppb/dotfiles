@@ -1,8 +1,8 @@
 # general
-current_folder=$(dirname "$(realpath "$0")")
+#current_folder=$(dirname "$(realpath "$0")") # FIXME: throws an error on bootstrap
 
 # private stuff
-source $current_folder/private/tokens.sh
+# source $current_folder/private/tokens.sh
 
 # shortcuts
 alias g="git"
@@ -56,20 +56,15 @@ prompt pure # pure must be activated after oh my zsh
 # thefuck
 eval $(thefuck --alias fck)
 
+# asdf (version manager)
+. /usr/local/opt/asdf/libexec/asdf.sh
+export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # partial versions
+
 # environment variables
 export EDITOR='nvim'
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
-
-# fnm
-eval "$(fnm env --use-on-cd)"
-
-# rbenv
-eval "$(rbenv init - zsh)"
-
-# pyenv
-eval "$(pyenv init -)"
 
 export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
 export PATH="$HOME/.docker/bin:$PATH"

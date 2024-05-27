@@ -20,10 +20,10 @@ echo "installing homebrew"
 echo "installing terminal stuff"
 brew install \
 7-zip \
+asdf \
 bat \
 coreutils \
 git-delta \
-fnm \
 fzf \
 gh \
 git \
@@ -31,10 +31,7 @@ imagemagick \
 ncdu \
 neovim \
 parallel \
-pyenv \
-rbenv \
 ripgrep \
-ruby-build \
 switchaudio-osx \
 thefuck \
 tmux \
@@ -97,6 +94,11 @@ yes 'will cite' | parallel --citation
 echo "installing tmux plugins"
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 ${HOME}/.tmux/plugins/tpm/bin/install_plugins
+
+echo "installing asdf"
+echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
+asdf plugin add nodejs python ruby
+echo "legacy_version_file = yes" >> $HOME/.asdfrc # support .nvmrc
 
 echo "installing yarn"
 curl -o- -L https://yarnpkg.com/install.sh | bash # installation via homebrew doesn't allow to install yarn without node
