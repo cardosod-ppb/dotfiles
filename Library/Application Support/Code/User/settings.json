@@ -3,7 +3,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "debug.inlineValues": "off",
-  "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.hideUnchangedRegions.enabled": false,
   "editor.accessibilitySupport": "off",
   "editor.autoClosingQuotes": "never",
   "editor.cursorBlinking": "solid",
