@@ -57,6 +57,14 @@ eval $(thefuck --alias fck)
 . /usr/local/opt/asdf/libexec/asdf.sh
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # partial versions
 
+# java
+export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+
+# react native (android)
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
 # environment variables
 export EDITOR='nvim'
 export LANG=en_US.UTF-8

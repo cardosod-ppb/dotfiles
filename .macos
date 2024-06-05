@@ -28,6 +28,7 @@ fzf \
 gh \
 git \
 imagemagick \
+mas \
 ncdu \
 neovim \
 parallel \
@@ -42,6 +43,7 @@ zsh
 echo "installing apps"
 brew install --cask \
 android-file-transfer \
+android-studio \
 alfred \
 balenaetcher \
 bruno \
@@ -64,7 +66,12 @@ slack \
 spotify \
 visual-studio-code \
 vlc \
-zoom
+watchman \
+zoom \
+zulu@17
+
+echo "installing xcode"
+mas install 497799835
 
 echo "installing vscode extensions"
 code --install-extension \
