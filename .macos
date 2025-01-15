@@ -105,7 +105,7 @@ ${HOME}/.tmux/plugins/tpm/bin/install_plugins
 echo "installing asdf"
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 asdf plugin add nodejs python ruby
-echo "legacy_version_file = yes" >> $HOME/.asdfrc # support .nvmrc
+echo "legacy_version_file = yes" >> $HOME/.asdfrc #  # support other version manager files (.nvmrc, .ruby-version, etc.)
 
 echo "installing yarn"
 corepack enable
