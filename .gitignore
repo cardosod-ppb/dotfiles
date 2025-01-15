@@ -1,1 +1,6 @@
+# personal
 private
+
+# work
+.npmrcs/work
+.gitconfig_work
