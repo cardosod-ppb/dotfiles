@@ -2,10 +2,26 @@
   "[handlebars]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "biomejs.biome"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    // "editor.defaultFormatter": "biomejs.biome"
+  },
   "debug.inlineValues": "off",
   "diffEditor.hideUnchangedRegions.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
   "editor.accessibilitySupport": "off",
   "editor.autoClosingQuotes": "never",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always"
+  },
   "editor.cursorBlinking": "solid",
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Menlo",
@@ -15,7 +31,15 @@
   "editor.minimap.enabled": false,
   "editor.multiCursorModifier": "ctrlCmd",
   "editor.tabSize": 2,
-  "eslint.format.enable": true,
+  "eslint.enable": true,
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "explorer.confirmDragAndDrop": false,
+  "extensions.ignoreRecommendations": true,
   "files.exclude": {
     "**/.DS_Store": true,
     "**/.git": true,
@@ -28,10 +52,24 @@
   "git.path": "/usr/bin/git",
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
+  "githubPullRequests.terminalLinksHandler": "github",
+  "gitlens.views.scm.grouped.views": {
+    "branches": true,
+    "commits": false,
+    "contributors": true,
+    "launchpad": false,
+    "remotes": true,
+    "repositories": false,
+    "searchAndCompare": false,
+    "stashes": true,
+    "tags": true,
+    "worktrees": true
+  },
   "javascript.inlayHints.parameterNames.enabled": "all",
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "terminal.explorerKind": "external",
   "terminal.integrated.fontFamily": "Menlo",
   "terminal.integrated.fontSize": 12,
   "typescript.inlayHints.parameterNames.enabled": "all",
@@ -43,6 +81,6 @@
   "window.restoreFullscreen": true,
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Dark+",
-  "workbench.sideBar.location": "right",
-  "workbench.editor.empty.hint": "hidden"
+  "workbench.editor.empty.hint": "hidden",
+  "workbench.sideBar.location": "right"
 }
