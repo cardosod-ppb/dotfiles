@@ -80,7 +80,8 @@ dbaeumer.vscode-eslint \
 editorconfig.editorc \
 eamodio.gitlens \
 esbenp.prettier-vscode \
-vscodevim.vim
+vscodevim.vim \
+yoavbls.pretty-ts-errors
 
 echo "setting zsh as default shell"
 chsh -s /usr/local/bin/zsh
