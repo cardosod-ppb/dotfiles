@@ -50,6 +50,7 @@
     "**/Thumbs.db": true
   },
   "git.path": "/usr/bin/git",
+  "git.autorefresh": true,
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.terminalLinksHandler": "github",
