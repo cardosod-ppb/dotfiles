@@ -3,7 +3,6 @@ source ~/Projects/personal/tokens.sh
 
 # shortcuts
 alias g="git"
-alias v="nvim"
 
 # navigation 
 alias cd..="cd .."
@@ -66,7 +65,6 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # environment variables
-export EDITOR='nvim'
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
