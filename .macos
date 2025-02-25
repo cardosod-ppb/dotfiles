@@ -47,14 +47,14 @@ google-chrome \
 maccy \
 mysqlworkbench \
 notion \
+openjdk@17 \
 rectangle \
 slack \
 spotify \
 visual-studio-code \
 vlc \
 watchman \
-zoom \
-zulu@17
+zoom
 
 echo "installing xcode"
 mas install 497799835
