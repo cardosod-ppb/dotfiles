@@ -31,33 +31,22 @@ imagemagick \
 mas \
 ncdu \
 ripgrep \
-switchaudio-osx \
 thefuck \
 tree \
-you-get \
 zsh
 
 echo "installing apps"
 brew install --cask \
 android-file-transfer \
 android-studio \
-alfred \
 balenaetcher \
 bruno \
-cyberduck \
 docker \
 firefox \
-gimp \
 google-chrome \
-iterm2 \
 maccy \
 mysqlworkbench \
 notion \
-pure \
-qlcolorcode \
-qlmarkdown \
-qlstephen \
-quicklook-json \
 rectangle \
 slack \
 spotify \
