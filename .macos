@@ -11,7 +11,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "Hello $(whoami)! Let's get you set up."
 
-echo "create projects folder"
+echo "creating projects folder"
 mkdir -p ${HOME}/Projects
 
 echo "installing homebrew"
@@ -87,7 +87,7 @@ yoavbls.pretty-ts-errors
 # asdf plugin add nodejs python ruby
 # echo "legacy_version_file = yes" >> $HOME/.asdfrc #  # support other version manager files (.nvmrc, .ruby-version, etc.)
 
-echo "installing yarn"
+echo "enabling corepack"
 corepack enable
 
 echo "generating a new ssh key for github"
