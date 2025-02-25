@@ -1,10 +1,5 @@
-[includeIf "gitdir:~/Projects/personal/"]
-  path = ~/.gitconfig_personal
-
-[includeIf "gitdir:~/Projects/work/"]
-  path = ~/.gitconfig_work
-
 [user]
+  email = diogo.cardoso@flutteruki.com
 	name = Diogo Cardoso
 
 [core]

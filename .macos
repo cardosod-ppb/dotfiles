@@ -1,7 +1,7 @@
 # ~/.macos https://github.com/kentcdodds/dotfiles/blob/main/.macos
 # Modified by Diogo Cardoso 
 # Run without downloading:
-# curl https://raw.githubusercontent.com/dpcardoso/dotfiles/HEAD/.macos | bash
+# curl https://raw.githubusercontent.com/cardosod-ppb/dotfiles/HEAD/.macos | bash
 
 # Ask for the administrator password upfront
 sudo -v
@@ -12,7 +12,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 echo "Hello $(whoami)! Let's get you set up."
 
 echo "create projects folder"
-mkdir -p ${HOME}/Projects/{personal,work}
+mkdir -p ${HOME}/Projects
 
 echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -112,35 +112,20 @@ echo "installing yarn"
 corepack enable
 
 echo "generating a new ssh key for github"
-mkdir -p ${HOME}/.ssh/{personal,work}
-ssh-keygen -t ed25519 -C "diogo.cardoso@outlook.com" -N "" -f ~/.ssh/personal/github_id_ed25519
+ssh-keygen -t ed25519 -C "diogo.cardoso@flutteruki.com" -N "" -f ~/.ssh/github_id_ed25519
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config
-echo "Host *\n AddKeysToAgent yes\n IdentityFile ~/.ssh/personal/github_id_ed25519" | tee ~/.ssh/config
-ssh-add --apple-use-keychain ~/.ssh/personal/github_id_ed25519
+echo "Host github.com\n AddKeysToAgent yes\n IdentityFile ~/.ssh/github_id_ed25519" | tee ~/.ssh/config
+ssh-add --apple-use-keychain ~/.ssh/github_id_ed25519
 
 echo "adding public key to github"
-gh ssh-key add ~/.ssh/personal/github_id_ed25519.pub --title $(hostname)
+gh ssh-key add ~/.ssh/github_id_ed25519.pub --title $(hostname)
 
 echo "cloning dotfiles"
-git clone https://github.com/dpcardoso/dotfiles.git "${HOME}/Projects/personal/dotfiles"
-ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
-ln -s "${HOME}/Projects/personal/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
-ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
-ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_personal" "${HOME}/.gitconfig_personal"
-ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig_work" "${HOME}/.gitconfig_work"
-ln -s "${HOME}/Projects/personal/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
-ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/default" "${HOME}/.npmrcs/default"
-ln -s "${HOME}/Projects/personal/dotfiles/.npmrcs/work" "${HOME}/.npmrcs/work"
-ln -s "${HOME}/Projects/personal/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
-ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
-
-printf "TODO:\n\
-configure: \n\
-  GitHub SSH Key (pbcopy < ~/.ssh/personal/github_id_ed25519.pub) \n\
-  Git (work email) \n\
-  NPM (work npmrc) \n\
-install: \n\
-  Vimac (https://install.appcenter.ms/users/dexterleng/apps/vimac/distribution_groups/sparkle) \n\
-\n\
-"
+git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/dotfiles"
+ln -s "${HOME}/Projects/dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -s "${HOME}/Projects/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
+ln -s "${HOME}/Projects/dotfiles/.gitconfig" "${HOME}/.gitconfig"
+ln -s "${HOME}/Projects/dotfiles/.config/nvim/init.vim" "${HOME}/.config/nvim/init.vim"
+ln -s "${HOME}/Projects/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
+ln -s "${HOME}/Projects/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
