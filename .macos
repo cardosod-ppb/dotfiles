@@ -30,7 +30,6 @@ git \
 imagemagick \
 mas \
 ncdu \
-parallel \
 ripgrep \
 switchaudio-osx \
 thefuck \
@@ -93,9 +92,6 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 
 echo "installing fzf"
 $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
-
-echo "installing parallel"
-yes 'will cite' | parallel --citation
 
 echo "installing asdf"
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
