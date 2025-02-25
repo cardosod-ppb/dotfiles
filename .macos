@@ -34,7 +34,6 @@ parallel \
 ripgrep \
 switchaudio-osx \
 thefuck \
-tmux \
 tree \
 you-get \
 zsh
@@ -98,10 +97,6 @@ $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
 echo "installing parallel"
 yes 'will cite' | parallel --citation
 
-echo "installing tmux plugins"
-git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
-${HOME}/.tmux/plugins/tpm/bin/install_plugins
-
 echo "installing asdf"
 echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 asdf plugin add nodejs python ruby
@@ -125,5 +120,4 @@ git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/dotfiles"
 ln -s "${HOME}/Projects/dotfiles/.zshrc" "${HOME}/.zshrc"
 ln -s "${HOME}/Projects/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/Projects/dotfiles/.gitconfig" "${HOME}/.gitconfig"
-ln -s "${HOME}/Projects/dotfiles/.tmux.conf" "${HOME}/.tmux.conf"
 ln -s "${HOME}/Projects/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
