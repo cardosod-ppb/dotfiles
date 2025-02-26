@@ -49,7 +49,6 @@ watchman
 
 echo "installing apps"
 brew install --cask \
-android-file-transfer \
 android-studio \
 balenaetcher \
 bruno \
