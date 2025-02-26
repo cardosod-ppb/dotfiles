@@ -11,6 +11,15 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "Hello $(whoami)! Let's get you set up."
 
+echo -n "Enter your GitHub token: "
+read GITHUB_TOKEN
+echo -n "Enter your GitLab token: "
+read GITLAB_TOKEN
+
+touch .tokens
+echo -e "export GITHUB_TOKEN=\"$GITHUB_TOKEN\"\nexport GITLAB_TOKEN=\"$GITLAB_TOKEN\"" > .tokens
+source .tokens
+
 echo "creating projects folder"
 mkdir -p ${HOME}/Projects
 
@@ -26,6 +35,7 @@ coreutils \
 git-delta \
 fzf \
 gh \
+glab \
 git \
 imagemagick \
 mas \
@@ -98,6 +108,9 @@ touch ~/.ssh/config
 echo -e "Host github.com\n  AddKeysToAgent yes\n  IdentityFile ~/.ssh/github_id_ed25519" >> ~/.ssh/config
 ssh-add --apple-use-keychain ~/.ssh/github_id_ed25519
 
+echo "authenticating to github"
+gh auth login --hostname github.com --git-protocol ssh
+
 echo "adding public key to github"
 gh ssh-key add ~/.ssh/github_id_ed25519.pub --title $(hostname)
 
@@ -105,8 +118,14 @@ echo "generating ssh key for gitlab"
 ssh-keygen -t ed25519 -C "diogo.cardoso@flutteruki.com" -N "" -f ~/.ssh/gitlab_id_ed25519
 eval "$(ssh-agent -s)"
 touch ~/.ssh/config
-echo -e "Host gitlab.com\n  PreferredAuthentications publickey\n  IdentityFile ~/.ssh/gitlab_id_ed25519" >> ~/.ssh/config
+echo -e "Host gitlab.app.betfair\n  PreferredAuthentications publickey\n  IdentityFile ~/.ssh/gitlab_id_ed25519" >> ~/.ssh/config
 ssh-add --apple-use-keychain ~/.ssh/gitlab_id_ed25519
+
+echo "authenticating to gitlab"
+echo $GITLAB_TOKEN | glab auth login --hostname gitlab.app.betfair --stdin
+
+# echo "adding public key to gitlab"
+# glab ssh-key add ~/.ssh/gitlab_id_ed25519.pub --title "$(hostname)" # TODO: 401 unauthorized
 
 echo "cloning dotfiles"
 git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/dotfiles"
