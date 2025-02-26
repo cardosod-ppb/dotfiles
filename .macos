@@ -32,7 +32,8 @@ mas \
 ncdu \
 ripgrep \
 thefuck \
-tree
+tree \
+watchman
 # zsh
 
 echo "installing apps"
@@ -54,7 +55,6 @@ slack \
 spotify \
 visual-studio-code \
 vlc \
-watchman \
 zoom
 
 echo "installing xcode"
