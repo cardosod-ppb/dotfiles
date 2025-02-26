@@ -30,6 +30,7 @@ git \
 imagemagick \
 mas \
 ncdu \
+openjdk@17 \
 ripgrep \
 thefuck \
 tree \
@@ -48,7 +49,6 @@ google-chrome \
 maccy \
 mysqlworkbench \
 notion \
-openjdk@17 \
 postman \
 rectangle \
 slack \
