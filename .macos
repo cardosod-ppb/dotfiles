@@ -21,7 +21,7 @@ echo -e "export GITHUB_TOKEN=\"$GITHUB_TOKEN\"\nexport GITLAB_TOKEN=\"$GITLAB_TO
 source .tokens
 
 echo "creating projects folder"
-mkdir -p ${HOME}/Projects
+mkdir -p ${HOME}/Projects/{personal,work}
 
 echo "installing homebrew"
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
