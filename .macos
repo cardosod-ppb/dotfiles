@@ -79,11 +79,7 @@ vscodevim.vim \
 yoavbls.pretty-ts-errors
 
 # echo "installing oh my zsh"
-# sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
-# echo "installing oh my zsh plugins"
-# git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-# git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # echo "installing fzf"
 # $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
@@ -124,7 +120,7 @@ echo $GITLAB_TOKEN | glab auth login --hostname gitlab.app.betfair --stdin
 
 echo "cloning dotfiles"
 git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/personal/dotfiles"
-# ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
+ln -s "${HOME}/Projects/personal/dotfiles/.zshrc" "${HOME}/.zshrc"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitignore_global" "${HOME}/.gitignore_global"
 ln -s "${HOME}/Projects/personal/dotfiles/.gitconfig" "${HOME}/.gitconfig"
 ln -s "${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json" "${HOME}/Library/Application\ Support/Code/User/settings.json"
