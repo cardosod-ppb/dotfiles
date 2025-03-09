@@ -45,7 +45,6 @@ ripgrep \
 thefuck \
 tree \
 watchman
-# zsh
 
 echo "installing apps"
 brew install --cask \
@@ -78,9 +77,6 @@ eamodio.gitlens \
 esbenp.prettier-vscode \
 vscodevim.vim \
 yoavbls.pretty-ts-errors
-
-# echo "setting zsh as default shell"
-# chsh -s /usr/local/bin/zsh
 
 # echo "installing oh my zsh"
 # sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
