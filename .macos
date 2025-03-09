@@ -16,9 +16,9 @@ read GITHUB_TOKEN
 echo -n "Enter your GitLab token: "
 read GITLAB_TOKEN
 
-touch .tokens
-echo -e "export GITHUB_TOKEN=\"$GITHUB_TOKEN\"\nexport GITLAB_TOKEN=\"$GITLAB_TOKEN\"" > .tokens
-source .tokens
+touch .tokens.sh
+echo -e "export GITHUB_TOKEN=\"$GITHUB_TOKEN\"\nexport GITLAB_TOKEN=\"$GITLAB_TOKEN\"" > .tokens.sh
+source .tokens.sh
 
 echo "creating projects folder"
 mkdir -p ${HOME}/Projects/{personal,work}
