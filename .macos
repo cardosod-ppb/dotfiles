@@ -81,9 +81,6 @@ yoavbls.pretty-ts-errors
 # echo "installing oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# echo "installing fzf"
-# $(brew --prefix)/opt/fzf/install --completion --key-bindings --update-rc
-
 # echo "installing asdf"
 # echo -e "\n. $(brew --prefix asdf)/libexec/asdf.sh" >> ${ZDOTDIR:-~}/.zshrc
 # asdf plugin add nodejs python ruby
