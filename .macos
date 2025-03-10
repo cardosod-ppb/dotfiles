@@ -87,9 +87,6 @@ asdf plugin add pnpm https://github.com/jonathanmorley/asdf-pnpm
 asdf plugin add python https://github.com/asdf-community/asdf-python
 asdf plugin add rubyhttps://github.com/asdf-vm/asdf-ruby
 
-echo "configuring asdf"
-echo "legacy_version_file = yes" >> $HOME/.asdfrc # support other version manager files (.nvmrc, .ruby-version, etc.)
-
 echo "enabling corepack"
 corepack enable
 
@@ -126,6 +123,7 @@ ln -s ${HOME}/Projects/personal/dotfiles/.gitignore_global ${HOME}/.gitignore_gl
 ln -s ${HOME}/Projects/personal/dotfiles/.gitconfig ${HOME}/.gitconfig
 ln -s ${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
 ln -s ${HOME}/Projects/personal/dotfiles/.npmrc ${HOME}/.npmrc
+ln -s ${HOME}/Projects/personal/dotfiles/.asdfrc ${HOME}/.asdfrc
 
 echo "Setup complete! Here are some reminders:"
 echo "- Add the GitLab SSH key to your GitLab account"
