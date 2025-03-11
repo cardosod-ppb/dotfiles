@@ -1,9 +1,6 @@
 # private stuff
 source ~/Projects/personal/dotfiles/.tokens.sh
 
-# shortcuts
-alias g="git"
-
 # navigation 
 alias cd..="cd .."
 alias ..="cd .."
