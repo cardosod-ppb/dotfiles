@@ -69,14 +69,16 @@ echo "installing xcode"
 mas install 497799835
 
 echo "installing vscode extensions"
-code --install-extension \
-bierner.markdown-mermaid \
-dbaeumer.vscode-eslint \
-editorconfig.editorc \
-eamodio.gitlens \
-esbenp.prettier-vscode \
-vscodevim.vim \
-yoavbls.pretty-ts-errors
+code --install-extension bierner.markdown-mermaid
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension eamodio.gitlens
+code --install-extension editorconfig.editorconfig
+code --install-extension esbenp.prettier-vscode
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension github.vscode-pull-request-github
+code --install-extension vscodevim.vim
+code --install-extension yoavbls.pretty-ts-errors
 
 # echo "installing oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
