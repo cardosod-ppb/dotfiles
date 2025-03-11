@@ -1,5 +1,5 @@
 # private stuff
-# source ~/Projects/personal/dotfiles/.tokens.sh
+source ~/Projects/personal/dotfiles/.tokens.sh
 
 # shortcuts
 alias g="git"
