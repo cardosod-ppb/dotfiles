@@ -85,7 +85,8 @@ export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # partial versions
 
 # java
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/zulu-17.jdk/Contents/Home
+export JAVA_HOME=$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home
+export PATH=$PATH:$JAVA_HOME/bin
 
 # react native (android)
 export ANDROID_HOME=$HOME/Library/Android/sdk
