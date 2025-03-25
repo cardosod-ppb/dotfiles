@@ -18,7 +18,44 @@ cp_progress() { rsync -WavP --human-readable --progress $1 $2 } # copy with prog
 # directories
 alias lsa="gls --almost-all --classify --color --group-directories-first --human-readable -l"
 alias lsd='ls -l | grep "^d"' # only directories
-rm_recursive() { find . -name $1 -type d -prune -exec echo '{}' \; -exec rm -rf {} \;  }
+
+rm_recursive() {
+  local include_ignored=0
+  local name=""
+
+  # Parse arguments
+  while [[ $# -gt 0 ]]; do
+    case $1 in
+      --all)  # Include git-ignored files
+        include_ignored=1
+        shift
+        ;;
+      *)
+        name=$1
+        shift
+        ;;
+    esac
+  done
+
+  if [[ -z "$name" ]]; then
+    echo "Usage: rm_recursive <name> [--all]"
+    return 1
+  fi
+
+
+  if [[ $include_ignored -eq 1 ]]; then
+    # Remove all matching files/folders, including git-ignored ones
+    find . -name "$name" -exec rm -rf {} +
+  else
+    # Find files that are NOT ignored by Git and remove them
+    find . -name "$name" -print | while read -r file; do
+      if ! git check-ignore -q "$file"; then
+        rm -rf "$file"
+      fi
+    done
+  fi
+}
+
 
 # networking
 alias ip="ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print \$2}'"
