@@ -78,6 +78,7 @@ code --install-extension esbenp.prettier-vscode
 code --install-extension github.copilot
 code --install-extension github.copilot-chat
 code --install-extension github.vscode-pull-request-github
+code --install-extension graphql.vscode-graphql-syntax
 code --install-extension vscodevim.vim
 code --install-extension yoavbls.pretty-ts-errors
 
