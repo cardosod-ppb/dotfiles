@@ -84,6 +84,10 @@ eval $(thefuck --alias fck)
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # partial versions
 
+# pnpm
+export PNPM_HOME=$HOME/Library/pnpm
+export PATH=$PATH:$PNPM_HOME
+
 # java
 export JAVA_HOME=$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home
 export PATH=$PATH:$JAVA_HOME/bin

@@ -92,6 +92,9 @@ asdf plugin add rubyhttps://github.com/asdf-vm/asdf-ruby
 echo "enabling corepack"
 corepack enable
 
+echo "configuring pnpm"
+pnpm config set global-bin-dir $PNPM_HOME # TODO: this is only available after sourcing ~/.zshrc
+
 echo "generating ssh key for github"
 ssh-keygen -t ed25519 -C "diogo.cardoso@flutteruki.com" -N "" -f ~/.ssh/github_id_ed25519
 eval "$(ssh-agent -s)"
