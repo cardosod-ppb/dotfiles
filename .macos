@@ -95,6 +95,10 @@ corepack enable
 echo "configuring pnpm"
 pnpm config set global-bin-dir $PNPM_HOME # TODO: this is only available after sourcing ~/.zshrc
 
+echo "installing node global packages"
+pnpm add -g \
+pm2
+
 echo "configuring ssh"
 touch ~/.ssh/config
 
