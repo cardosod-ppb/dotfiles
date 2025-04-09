@@ -97,6 +97,7 @@ pnpm config set global-bin-dir $PNPM_HOME # TODO: this is only available after s
 
 echo "installing node global packages"
 pnpm add -g \
+npm-check-updates \
 pm2
 
 echo "configuring ssh"
