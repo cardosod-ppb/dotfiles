@@ -70,6 +70,8 @@
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "search.useIgnoreFiles": true,
+  "search.useGlobalIgnoreFiles": true,
   "terminal.explorerKind": "external",
   "terminal.integrated.fontFamily": "Menlo",
   "terminal.integrated.fontSize": 12,
