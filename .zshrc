@@ -19,6 +19,15 @@ cp_progress() { rsync -WavP --human-readable --progress $1 $2 } # copy with prog
 alias lsa="gls --almost-all --classify --color --group-directories-first --human-readable -l"
 alias lsd='ls -l | grep "^d"' # only directories
 
+# git
+gstla() {
+  git stash list | fzf | sed 's/:.*//' | xargs git stash apply
+}
+
+gstlp() {
+  git stash list | fzf | sed 's/:.*//' | xargs git stash pop
+}
+
 rm_recursive() {
   local include_ignored=0
   local name=""
