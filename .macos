@@ -71,6 +71,7 @@ echo "installing xcode"
 mas install 497799835
 
 echo "installing vscode extensions"
+code --install-extension biomejs.biome
 code --install-extension bierner.markdown-mermaid
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension eamodio.gitlens
