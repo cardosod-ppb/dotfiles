@@ -16,6 +16,11 @@ read GITHUB_TOKEN
 echo -n "Enter your GitLab token: "
 read GITLAB_TOKEN
 
+echo "Configuring system settings"
+defaults write -g ApplePressAndHoldEnabled -bool false # Disable press-and-hold for keys in favor of key repeat
+defaults write -g KeyRepeat -int 1 # Set a fast key repeat rate
+defaults write -g InitialKeyRepeat -int 15 # Set a fast initial key repeat rate
+
 touch .tokens.sh
 echo -e "export GITHUB_TOKEN=\"$GITHUB_TOKEN\"\nexport GITLAB_TOKEN=\"$GITLAB_TOKEN\"" > .tokens.sh
 source .tokens.sh
