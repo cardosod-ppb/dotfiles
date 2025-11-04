@@ -29,42 +29,37 @@ gstlp() {
 }
 
 rm_recursive() {
-  local include_ignored=0
-  local name=""
-
-  # Parse arguments
-  while [[ $# -gt 0 ]]; do
-    case $1 in
-      --all)  # Include git-ignored files
-        include_ignored=1
-        shift
-        ;;
-      *)
-        name=$1
-        shift
-        ;;
-    esac
-  done
-
-  if [[ -z "$name" ]]; then
-    echo "Usage: rm_recursive <name> [--all]"
+  if [ -z "$1" ]; then
+    echo "Usage: rm_recursive <folder_name>"
     return 1
   fi
 
+  folder_name="$1"
 
-  if [[ $include_ignored -eq 1 ]]; then
-    # Remove all matching files/folders, including git-ignored ones
-    find . -name "$name" -exec rm -rf {} +
-  else
-    # Find files that are NOT ignored by Git and remove them
-    find . -name "$name" -print | while read -r file; do
-      if ! git check-ignore -q "$file"; then
-        rm -rf "$file"
-      fi
-    done
+  # List the folders to be deleted
+  echo "The following folders will be deleted:"
+  folders_to_delete=$(find . -type d -name "$folder_name")
+  
+  if [ -z "$folders_to_delete" ]; then
+    echo "No folders named '$folder_name' found."
+    return 0
   fi
-}
 
+  echo "$folders_to_delete"
+
+  # Prompt the user for confirmation
+  echo -n "Do you want to proceed? (y/n): "
+  read confirmation
+  if [[ "$confirmation" != "y" && "$confirmation" != "Y" ]]; then
+    echo "Operation canceled."
+    return 0
+  fi
+
+  # Delete the folders
+  echo "Deleting folders..."
+  find . -type d -name "$folder_name" -exec rm -rf {} +
+  echo "Done."
+}
 
 # networking
 alias ip="ifconfig | grep \"inet \" | grep -Fv 127.0.0.1 | awk '{print \$2}'"
