@@ -96,7 +96,9 @@ echo "installing asdf plugins"
 asdf plugin add nodejs https://github.com/asdf-vm/asdf-nodejs.git
 asdf plugin add pnpm https://github.com/jonathanmorley/asdf-pnpm
 asdf plugin add python https://github.com/asdf-community/asdf-python
-asdf plugin add rubyhttps://github.com/asdf-vm/asdf-ruby
+
+echo "installing rust"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 echo "enabling corepack"
 corepack enable
