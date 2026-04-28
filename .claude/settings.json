@@ -1,0 +1,7 @@
+{
+  "effortLevel": "low",
+  "theme": "dark",
+  "permissions": {
+    "defaultMode": "bypassPermissions"
+  }
+}

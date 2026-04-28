@@ -174,6 +174,7 @@ echo "cloning dotfiles"
 git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/personal/dotfiles"
 ln -s ${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
 ln -s ${HOME}/Projects/personal/dotfiles/.asdfrc ${HOME}/.asdfrc
+ln -s ${HOME}/Projects/personal/dotfiles/.claude/settings.json ${HOME}/.claude/settings.json
 ln -s ${HOME}/Projects/personal/dotfiles/.gitconfig ${HOME}/.gitconfig
 ln -s ${HOME}/Projects/personal/dotfiles/.gitignore_global ${HOME}/.gitignore_global
 ln -s ${HOME}/Projects/personal/dotfiles/.npmrc ${HOME}/.npmrc
