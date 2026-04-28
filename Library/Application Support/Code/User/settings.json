@@ -2,6 +2,7 @@
   "chat.agent.maxRequests": 500,
   "chat.tools.global.autoApprove": true,
   "chat.viewSessions.orientation": "stacked",
+  "claudeCode.allowDangerouslySkipPermissions": true,
   "claudeCode.preferredLocation": "panel",
   "debug.inlineValues": "off",
   "diffEditor.hideUnchangedRegions.enabled": false,
