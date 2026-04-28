@@ -44,6 +44,7 @@ glab \
 git \
 imagemagick \
 mas \
+mkcert \
 mockserver \
 ncdu \
 openjdk@17 \
@@ -115,6 +116,9 @@ export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include" # allow compilers to fi
 echo "configuring ruby"
 brew install libyaml
 export PATH="$HOME/.asdf/shims:$PATH" # override system ruby
+
+echo "installing mkcert"
+mkcert -install
 
 echo "configuring ssh"
 touch ~/.ssh/config
