@@ -167,6 +167,9 @@ rm ~/.zshrc # oh my zsh creates a new .zshrc file
 echo "installing claude"
 curl -fsSL https://claude.ai/install.sh | bash
 
+echo "installing claude extensions"
+claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp
+
 echo "cloning dotfiles"
 git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/personal/dotfiles"
 ln -s ${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
@@ -180,3 +183,4 @@ source ${HOME}/.zshrc
 
 echo "Setup complete! Here are some reminders:"
 echo "- Add the GitLab SSH key to your GitLab account"
+echo "- Authenticate to Figma MCP"
