@@ -93,8 +93,8 @@ export PNPM_HOME=$HOME/Library/pnpm
 export PATH=$PATH:$PNPM_HOME
 
 # java
-export JAVA_HOME=$(brew --prefix openjdk)/libexec/openjdk.jdk/Contents/Home
-export PATH=$PATH:$JAVA_HOME/bin
+export JAVA_HOME="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home"
+export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 # react native (android)
 export ANDROID_HOME=$HOME/Library/Android/sdk
