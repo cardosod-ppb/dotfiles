@@ -4,19 +4,20 @@
   },
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.defaultFormatter": "biomejs.biome"
   },
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.defaultFormatter": "biomejs.biome"
   },
   "[typescript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-    // "editor.defaultFormatter": "biomejs.biome"
   },
+  "chat.agent.maxRequests": 500,
+  "chat.tools.global.autoApprove": true,
+  "chat.viewSessions.orientation": "stacked",
   "debug.inlineValues": "off",
   "diffEditor.hideUnchangedRegions.enabled": false,
   "diffEditor.ignoreTrimWhitespace": false,
+  "diffEditor.maxComputationTime": 0,
   "editor.accessibilitySupport": "off",
   "editor.autoClosingQuotes": "never",
   "editor.codeActionsOnSave": {
@@ -49,19 +50,29 @@
     "**/CVS": true,
     "**/Thumbs.db": true
   },
+  "git.blame.editorDecoration.enabled": true,
+  "git.openRepositoryInParentFolders": "never",
   "git.path": "/usr/bin/git",
   "git.autorefresh": true,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": false,
+    "scminput": false
+  },
+  "github.copilot.nextEditSuggestions.enabled": true,
   "githubPullRequests.fileListLayout": "tree",
   "githubPullRequests.pullBranch": "never",
   "githubPullRequests.terminalLinksHandler": "github",
   "gitlens.views.scm.grouped.views": {
     "branches": true,
-    "commits": false,
+    "commits": true,
     "contributors": true,
+    "fileHistory": false,
     "launchpad": false,
     "remotes": true,
     "repositories": false,
-    "searchAndCompare": false,
+    "searchAndCompare": true,
     "stashes": true,
     "tags": true,
     "worktrees": true
@@ -70,11 +81,13 @@
   "javascript.preferences.importModuleSpecifier": "relative",
   "javascript.updateImportsOnFileMove.enabled": "always",
   "security.workspace.trust.untrustedFiles": "open",
+  "scm.defaultViewMode": "tree",
   "search.useIgnoreFiles": true,
   "search.useGlobalIgnoreFiles": true,
-  "terminal.explorerKind": "external",
+  "search.useParentIgnoreFiles": true,
   "terminal.integrated.fontFamily": "Menlo",
   "terminal.integrated.fontSize": 12,
+  "terminal.integrated.scrollback": 10000,
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.preferences.importModuleSpecifier": "relative",
   "typescript.preferences.includePackageJsonAutoImports": "on",
@@ -86,5 +99,6 @@
   "window.zoomLevel": 1,
   "workbench.colorTheme": "Default Dark+",
   "workbench.editor.empty.hint": "hidden",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
   "workbench.sideBar.location": "right"
 }
