@@ -1,16 +1,4 @@
 {
-  "[handlebars]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "chat.agent.maxRequests": 500,
   "chat.tools.global.autoApprove": true,
   "chat.viewSessions.orientation": "stacked",
