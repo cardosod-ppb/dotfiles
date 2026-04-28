@@ -90,7 +90,12 @@ code --install-extension github.copilot
 code --install-extension github.copilot-chat
 code --install-extension github.vscode-pull-request-github
 code --install-extension graphql.vscode-graphql-syntax
+code --install-extension mariusalchimavicius.json-to-ts
+code --install-extension ms-vscode.vscode-speech
+code --install-extension ms-vscode.vscode-speech-language-pack-pt-pt
 code --install-extension ryu1kn.partial-diff
+code --install-extension sallar.json-to-js-object
+code --install-extension usernamehw.errorlens
 code --install-extension vscodevim.vim
 code --install-extension yoavbls.pretty-ts-errors
 
