@@ -111,6 +111,10 @@ echo "configuring java"
 sudo ln -sfn /opt/homebrew/opt/openjdk@17/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-17.jdk # allow java wrappers to find JDK
 export CPPFLAGS="-I/opt/homebrew/opt/openjdk@17/include" # allow compilers to find JDK
 
+echo "configuring ruby"
+brew install libyaml
+export PATH="$HOME/.asdf/shims:$PATH" # override system ruby
+
 echo "configuring ssh"
 touch ~/.ssh/config
 

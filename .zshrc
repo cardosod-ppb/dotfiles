@@ -96,6 +96,9 @@ export PATH=$PATH:$PNPM_HOME
 export JAVA_HOME="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home"
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
+# ruby
+export PATH="$HOME/.asdf/shims:$PATH"
+
 # react native (android)
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
