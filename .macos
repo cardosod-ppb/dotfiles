@@ -46,6 +46,7 @@ imagemagick \
 mas \
 mockserver \
 ncdu \
+openjdk@17 \
 ripgrep \
 thefuck \
 tree \
