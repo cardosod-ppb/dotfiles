@@ -14,7 +14,6 @@
     "source.fixAll.eslint": "always"
   },
   "editor.cursorBlinking": "solid",
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
   "editor.fontFamily": "Menlo",
   "editor.fontSize": 12,
   "editor.formatOnSave": true,
