@@ -1,8 +1,11 @@
 {
   "effortLevel": "low",
-  "theme": "dark",
   "permissions": {
-    "allow": ["mcp__figma__get_design_context"],
+    "allow": [
+      "mcp__figma__get_design_context"
+    ],
     "defaultMode": "bypassPermissions"
-  }
+  },
+  "skipDangerousModePermissionPrompt": true,
+  "theme": "dark"
 }
