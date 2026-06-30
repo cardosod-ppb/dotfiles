@@ -74,6 +74,7 @@ slack \
 spotify \
 visual-studio-code \
 vlc \
+wispr-flow \
 zoom
 
 echo "installing xcode"
