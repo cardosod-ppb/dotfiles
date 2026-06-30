@@ -4,8 +4,9 @@
     "allow": [
       "mcp__figma__get_design_context"
     ],
-    "defaultMode": "bypassPermissions"
+    "defaultMode": "auto"
   },
+  "skipAutoPermissionPrompt": true,
   "skipDangerousModePermissionPrompt": true,
   "theme": "dark"
 }
