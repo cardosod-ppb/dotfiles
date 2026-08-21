@@ -94,7 +94,7 @@ export PNPM_HOME=$HOME/Library/pnpm
 export PATH=$PATH:$PNPM_HOME
 
 # java
-export JAVA_HOME="/opt/homebrew/Cellar/openjdk@17/17.0.17/libexec/openjdk.jdk/Contents/Home"
+export JAVA_HOME=$(/usr/libexec/java_home -v 17)
 export PATH="/opt/homebrew/opt/openjdk@17/bin:$PATH"
 
 # ruby
