@@ -40,6 +40,7 @@ copilot-cli \
 coreutils \
 fzf \
 gh \
+gdu \
 git-delta \
 glab \
 git \
@@ -47,7 +48,6 @@ imagemagick \
 mas \
 mkcert \
 mockserver \
-ncdu \
 openjdk@17 \
 ripgrep \
 thefuck \
