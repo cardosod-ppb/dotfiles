@@ -114,6 +114,6 @@ export LC_ALL=en_US.UTF-8
 export FZF_DEFAULT_COMMAND='rg --files --hidden'
 
 export PATH="$HOME/.docker/bin:$PATH"
-export PATH="Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 path() { echo $PATH | tr ':' '\n' }
