@@ -59,6 +59,7 @@ brew install --cask \
 android-studio \
 balenaetcher \
 bruno \
+claude-code \
 docker \
 firefox \
 google-chrome \
@@ -163,9 +164,6 @@ echo $GITLAB_TOKEN | glab auth login --hostname gitlab.app.betfair --stdin
 echo "installing oh my zsh"
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 rm ~/.zshrc # oh my zsh creates a new .zshrc file
-
-echo "installing claude"
-curl -fsSL https://claude.ai/install.sh | bash
 
 echo "installing claude extensions"
 claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp
