@@ -11,7 +11,7 @@ while true; do sudo -n true; sleep 60; kill -0 "$$" || exit; done 2>/dev/null &
 
 echo "Hello $(whoami)! Let's get you set up."
 
-echo -n "Enter your GitHub token: "
+echo -n "Enter your GitHub token: " # permissions: read:org, repo, workflow, write:packages
 read GITHUB_TOKEN
 echo -n "Enter your GitLab token: "
 read GITLAB_TOKEN
