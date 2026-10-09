@@ -43,6 +43,7 @@
   "git.openRepositoryInParentFolders": "never",
   "git.path": "/usr/bin/git",
   "git.autorefresh": true,
+  "git.repositoryScanMaxDepth": -1,
   "github.copilot.enable": {
     "*": true,
     "plaintext": false,
