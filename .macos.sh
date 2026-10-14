@@ -169,6 +169,10 @@ rm ~/.zshrc # oh my zsh creates a new .zshrc file
 echo "installing claude extensions"
 claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp
 
+echo "installing claude plugins"
+claude plugin install \
+mattpocock-skills@claude-plugins-official
+
 echo "cloning dotfiles"
 git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/personal/dotfiles"
 ln -s ${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
