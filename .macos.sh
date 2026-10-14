@@ -45,14 +45,14 @@ git-delta \
 glab \
 git \
 imagemagick \
-mas \
 mkcert \
 mockserver \
 openjdk@17 \
 ripgrep \
 thefuck \
 tree \
-watchman
+watchman \
+xcodes
 
 echo "installing apps"
 brew install --cask \
@@ -78,8 +78,9 @@ vlc \
 wispr-flow \
 zoom
 
+# Requires disconnecting the VPN
 echo "installing xcode"
-mas install 497799835
+xcodes install 26.6 # TODO: Replace hardcoded version
 
 echo "installing vscode extensions"
 code --install-extension biomejs.biome
