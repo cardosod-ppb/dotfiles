@@ -64,6 +64,7 @@ bruno \
 claude-code \
 docker \
 firefox \
+ghostty \
 google-chrome \
 homerow \
 maccy \
@@ -180,6 +181,7 @@ git clone git@github.com:cardosod-ppb/dotfiles.git "${HOME}/Projects/personal/do
 ln -s ${HOME}/Projects/personal/dotfiles/Library/Application\ Support/Code/User/settings.json ${HOME}/Library/Application\ Support/Code/User/settings.json
 ln -s ${HOME}/Projects/personal/dotfiles/.asdfrc ${HOME}/.asdfrc
 ln -s ${HOME}/Projects/personal/dotfiles/.claude/settings.json ${HOME}/.claude/settings.json
+ln -s ${HOME}/Projects/personal/dotfiles/.config/ghostty/config ${HOME}/.config/ghostty/config
 ln -s ${HOME}/Projects/personal/dotfiles/.default-npm-packages ${HOME}/.default-npm-packages
 ln -s ${HOME}/Projects/personal/dotfiles/.gitconfig ${HOME}/.gitconfig
 ln -s ${HOME}/Projects/personal/dotfiles/.gitignore_global ${HOME}/.gitignore_global
