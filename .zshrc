@@ -72,12 +72,6 @@ alias extract_rpm='rpm2cpio "$(fzf)" | cpio -idmv'
 # zsh
 bindkey -v # vim mode
 
-# oh my zsh
-export ZSH="$HOME/.oh-my-zsh"
-ZSH_THEME="robbyrussell"
-plugins=(git)
-source $ZSH/oh-my-zsh.sh
-
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings
 

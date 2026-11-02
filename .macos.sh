@@ -165,10 +165,6 @@ echo $GITLAB_TOKEN | glab auth login --hostname gitlab.app.betfair --stdin
 # echo "adding public key to gitlab"
 # glab ssh-key add ~/.ssh/gitlab_id_ed25519.pub --title "$(hostname)" # TODO: 401 unauthorized
 
-echo "installing oh my zsh"
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-rm ~/.zshrc # oh my zsh creates a new .zshrc file
-
 echo "installing claude extensions"
 claude mcp add --scope user --transport http figma https://mcp.figma.com/mcp
 
