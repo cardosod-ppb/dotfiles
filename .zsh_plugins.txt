@@ -1,0 +1,8 @@
+# antidote plugins: https://antidote.sh
+
+# git aliases
+ohmyzsh/ohmyzsh path:lib/git.zsh
+ohmyzsh/ohmyzsh path:plugins/git
+
+# prompt
+sindresorhus/pure

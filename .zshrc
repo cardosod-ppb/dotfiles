@@ -72,6 +72,11 @@ alias extract_rpm='rpm2cpio "$(fzf)" | cpio -idmv'
 # zsh
 bindkey -v # vim mode
 
+# antidote
+autoload -Uz compinit && compinit # fix command not found: compdef
+source $(brew --prefix)/opt/antidote/share/antidote/antidote.zsh
+antidote load # initialize plugins
+
 # tmux
 alias tmux-work='tmux kill-session -t work 2>/dev/null; tmux new-session -d -s _boot 2>/dev/null; tmux source-file ~/.tmux/work.conf; tmux kill-session -t _boot 2>/dev/null; tmux attach -t work'
 

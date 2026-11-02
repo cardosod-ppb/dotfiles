@@ -34,6 +34,7 @@ echo "installing homebrew"
 echo "installing terminal stuff"
 brew install \
 7-zip \
+antidote \
 asdf \
 bat \
 copilot-cli \
@@ -188,6 +189,7 @@ ln -s ${HOME}/Projects/personal/dotfiles/.gitignore_global ${HOME}/.gitignore_gl
 ln -s ${HOME}/Projects/personal/dotfiles/.npmrc ${HOME}/.npmrc
 ln -s ${HOME}/Projects/personal/dotfiles/.tmux.conf ${HOME}/.tmux.conf
 ln -s ${HOME}/Projects/personal/dotfiles/.tmux/work.conf ${HOME}/.tmux/work.conf
+ln -s ${HOME}/Projects/personal/dotfiles/.zsh_plugins.txt ${HOME}/.zsh_plugins.txt
 ln -s ${HOME}/Projects/personal/dotfiles/.zshrc ${HOME}/.zshrc
 
 source ${HOME}/.zshrc
