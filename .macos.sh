@@ -187,6 +187,7 @@ ln -s ${HOME}/Projects/personal/dotfiles/.gitconfig ${HOME}/.gitconfig
 ln -s ${HOME}/Projects/personal/dotfiles/.gitignore_global ${HOME}/.gitignore_global
 ln -s ${HOME}/Projects/personal/dotfiles/.npmrc ${HOME}/.npmrc
 ln -s ${HOME}/Projects/personal/dotfiles/.tmux.conf ${HOME}/.tmux.conf
+ln -s ${HOME}/Projects/personal/dotfiles/.tmux/work.conf ${HOME}/.tmux/work.conf
 ln -s ${HOME}/Projects/personal/dotfiles/.zshrc ${HOME}/.zshrc
 
 source ${HOME}/.zshrc

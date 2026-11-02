@@ -72,6 +72,9 @@ alias extract_rpm='rpm2cpio "$(fzf)" | cpio -idmv'
 # zsh
 bindkey -v # vim mode
 
+# tmux
+alias tmux-work='tmux kill-session -t work 2>/dev/null; tmux new-session -d -s _boot 2>/dev/null; tmux source-file ~/.tmux/work.conf; tmux kill-session -t _boot 2>/dev/null; tmux attach -t work'
+
 # fzf
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh # autocomplete and key bindings
 
