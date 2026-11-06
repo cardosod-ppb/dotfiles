@@ -86,6 +86,9 @@ alias tmux-work='tmux kill-session -t work 2>/dev/null; tmux new-session -d -s _
 # thefuck
 eval $(thefuck --alias fck)
 
+# node
+export NODE_USE_SYSTEM_CA=1 # accept self-signed certificates (eg: artifactory)
+
 # asdf (version manager)
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
 export ASDF_NODEJS_LEGACY_FILE_DYNAMIC_STRATEGY=latest_installed # partial versions
